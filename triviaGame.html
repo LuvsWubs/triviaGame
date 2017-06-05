@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="triviaGame.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+    <title>trivia game</title>
+  </head>
+  <body>
+  	<script type="text/javascript" src="triviaGame.js"></script>
+  	<div>
+  	<h2>Fast recognition of stroke symptoms can save a life. Every second counts.</h2>
+	<h1>Can you successfully recognize the symptoms of a stroke before time runs out?</h1>
+  	</div>
+	<div id="countDown"><h3>Time Remaining: <h3></div>
+	<br>
+	<div>Correct guesses:<p id="correctGuesses"></p> </div>
+	<div>Incorrect guesses:<p id="incorrectGuesses"></p> </div>
+	<div id="totalGuessesRight">Total guesses guessed correctly: </div>
+	<br>
+	<div class="images">
+	  	<img id="Q1" src="http://media.healthliving.today/wp-content/uploads/2015/11/migraine-or-a-stroke.jpg">
+	  		<div id="Q1answerFeedback"></div>
+			<button id ="true" onclick="Q1true()">True</button>
+	  		<button id="false" onclick="document.getElementById('Q1').src='http://i.uncyclopedia.kr/pedia/thumb/a/a2/Nuvola_apps_error.svg/512px-Nuvola_apps_error.svg.png'">False</button>
+
+	  	<img id="Q2" src="http://www.md-health.com/images/1HT04834/blurry-vision.jpg">
+	  		<div id="Q2answerFeedback"></div>
+	  		<button id ="true" onclick="Q2true()">True</button>
+	  		<button id="false" onclick="document.getElementById('Q2').src='http://i.uncyclopedia.kr/pedia/thumb/a/a2/Nuvola_apps_error.svg/512px-Nuvola_apps_error.svg.png'">False</button>
+
+	  	<img id="Q3" src="http://lisadeck.com/wp-content/uploads/2016/05/Arm-Weakness-300x300.jpg">
+	  		<div id="Q3answerFeedback"></div>
+	  		<button id ="true" onclick="Q3true()">True</button>
+	  		<button id="false" onclick="document.getElementById('Q3').src='http://i.uncyclopedia.kr/pedia/thumb/a/a2/Nuvola_apps_error.svg/512px-Nuvola_apps_error.svg.png'">False</button>
+
+	  	<img id="Q4" src="http://www.strokeawareness.com/images/home-man.png">
+	  		<div id="Q4answerFeedback"></div>
+			<button id ="true" onclick="Q4true()">True</button>
+	  		<button id="false" onclick="document.getElementById('Q4').src='http://i.uncyclopedia.kr/pedia/thumb/a/a2/Nuvola_apps_error.svg/512px-Nuvola_apps_error.svg.png'">False</button>
+
+	  	<img id="Q5" src="http://www.insites-consulting.com/wp-content/uploads/2014/12/Confused-man.jpg">
+	  		<div id="Q5answerFeedback"></div>
+			<button id ="true" onclick="Q5true()">True</button>
+	  		<button id="false" onclick="document.getElementById('Q5').src='http://i.uncyclopedia.kr/pedia/thumb/a/a2/Nuvola_apps_error.svg/512px-Nuvola_apps_error.svg.png'">False</button>
+  	</div>	
+  </body>
+</html>  	
